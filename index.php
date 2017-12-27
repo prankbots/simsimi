@@ -6,8 +6,8 @@ Modified by Ilyasa
 */
 require_once('./line_class.php');
 
-$channelAccessToken = 'YOUR-CHANNEL-ACCESS-TOKEN'; //Your Channel Access Token
-$channelSecret = 'YOUR-CHANNEL-SECRET';//Your Channel Secret
+$channelAccessToken = 'GP+kVtdT5j1Dn0UhxklB+gR0GPO+7gME+IrbpIVm83NDFKYluqNr5Iu7kbjAL+UJclEKfGh/NnrHRIlJHtQxOq67sQ8GNavI4I2WPw7z3nUNonYU/PnNXjtJGJm6++cuE5vr5Um0m+PiTnmc2vwCrAdB04t89/1O/w1cDnyilFU='; //Your Channel Access Token
+$channelSecret = '48470e3213930d241d268de1307f333d';//Your Channel Secret
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
@@ -25,7 +25,7 @@ if($message['type']=='sticker')
 							'messages' => array(
 								array(
 										'type' => 'text',									
-										'text' => 'Terima Kasih Stikernya.'										
+										'text' => 'Sticker palakan aja di pamerin.'										
 									
 									)
 							)
