@@ -6,8 +6,8 @@ Modified by Ilyasa
 */
 require_once('./line_class.php');
 
-$channelAccessToken = 'GP+kVtdT5j1Dn0UhxklB+gR0GPO+7gME+IrbpIVm83NDFKYluqNr5Iu7kbjAL+UJclEKfGh/NnrHRIlJHtQxOq67sQ8GNavI4I2WPw7z3nUNonYU/PnNXjtJGJm6++cuE5vr5Um0m+PiTnmc2vwCrAdB04t89/1O/w1cDnyilFU='; //Your Channel Access Token
-$channelSecret = '48470e3213930d241d268de1307f333d';//Your Channel Secret
+$channelAccessToken = 'cjeKJhzQw99iPoOfA2HT+m36UbzTJz/k8ydhLyulU4AiEF2wf/djlUAtWlIiNz+1GBuBmzPncbsmrDGP7SH0SFiNE+KZ3texYrirn4/4pnKX2m85lnY3Icqo2sU/SlZU1f4D6HA04NGzF3z4DAyVQlGUYhWQfeY8sLGRXgo3xvw='; //Your Channel Access Token
+$channelSecret = '0328a12fc2018eb18b070ce55b33e1ad';//Your Channel Secret
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
@@ -34,7 +34,7 @@ if($message['type']=='sticker')
 }
 else
 $pesan=str_replace(" ", "%20", $pesan_datang);
-$key = 'YOUR-API-KEY-SIMSIMI'; //API SimSimi
+$key = 'ygP6ZqK.r_65Lq.~WCOtthZjQnoOJHfbNhjmQ5Ga'; //API SimSimi
 $url = 'http://sandbox.api.simsimi.com/request.p?key='.$key.'&lc=id&ft=1.0&text='.$pesan;
 $json_data = file_get_contents($url);
 $url=json_decode($json_data,1);
